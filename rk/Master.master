@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+  
+    <title>DENTAL CLINIC MANAGMENT SYSTEM</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+
+    <asp:Label ID="Label1" runat="server" Text="Dental Clinic"  Font-Size="40pt" 
+            ForeColor="#3366FF"></asp:Label>  
+&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="Managment System" 
+       Font-Size="20pt" ForeColor="#3366FF"></asp:Label> 
+
+
+       
+
+
+       
+      
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Image ID="Image1" runat="server" Height="25px" ImageUrl="~/img/locationlogo-removebg-preview.png" Width="33px" />
+        &nbsp;<asp:Label ID="Label3" runat="server" ForeColor="#3366FF" Text="100 ft. road, Anand"></asp:Label>
+        &nbsp;&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" Height="25px" ImageUrl="~/img/calllogo-removebg-preview.png" Width="33px" />
+&nbsp;<asp:Label ID="Label4" runat="server" ForeColor="#3366FF" Text="+91 7801967636"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
+
+             <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Size="15pt" 
+                 StaticSubMenuIndent="10px" BackColor="White" DynamicHorizontalOffset="2" 
+                 Font-Names="Zurich BT" ForeColor="#3366FF" Font-Strikeout="True">
+                 <DynamicHoverStyle BackColor="#3366FF" ForeColor="White" />
+                 <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                 <DynamicMenuStyle BackColor="White" />
+                 <DynamicSelectedStyle BackColor="White" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="New Item" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Services" Value="New Item" NavigateUrl="~/dental_checkup.aspx">
+                        <asp:MenuItem NavigateUrl="~/dental_checkup.aspx" Text="Dental Checkup" 
+                            Value="Dental Checkup"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/teeth_cleaning.aspx" Text="Teeth Cleaning" 
+                            Value="Teeth Cleaning"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/dental_xray.aspx" Text="Dental X-RAY" 
+                            Value="Dental X-RAY"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/cavity_filling.aspx" Text="Cavity Filling" 
+                            Value="Cavity Filling"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/tooth_extration.aspx" Text="Tooth Extraction" 
+                            Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem Text="Dental Implant" Value="New Item" NavigateUrl="~/dental_implant.aspx"></asp:MenuItem>
+                    </asp:MenuItem> 
+
+                    <asp:MenuItem NavigateUrl="~/dentist.aspx" Text="Dentists" Value="Dentists"></asp:MenuItem>
+
+                    <asp:MenuItem NavigateUrl="~/about_us.aspx" Text="About Us" Value="About Us">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/login.aspx" Text="Log In" Value="Log In">
+                        <asp:MenuItem NavigateUrl="~/login.aspx" Text="Patient login" 
+                            Value="Patient login"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminlogin.aspx" Text="Admin login" 
+                            Value="Admin login"></asp:MenuItem>
+                    </asp:MenuItem>
+
+                </Items>
+                 <StaticHoverStyle BackColor="#3366FF" ForeColor="White" />
+                 <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="2px" />
+                 <StaticSelectedStyle BackColor="#3366FF" />
+            </asp:Menu>
+
+    &nbsp;&nbsp;
+
+    </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+        &nbsp;</div>
+
+     
+     
+    <div>
+                
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+  
+
+       
+       
+       
+       
+        </asp:ContentPlaceHolder>
+
+        <br />
+        <br />
+    </div>
+
+        
+   
+   
+        
+    
+    
+    </form>
+   
+</html>
+</body>
+    
